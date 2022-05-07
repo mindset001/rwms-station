@@ -15,99 +15,12 @@
             <img src="../assets/images/Group 28 (1).png" alt="">
             </a>
         </nav>
-    
+             
     </div>
 
     <!-- main content  -->
-    <div>
-
-            <div class="top">
-                <div class="flex justify-between nav">
-                
-                                        <div>
-                    <div class="flex items-center">
-                    <img src="../assets/images/user.png" alt="">
-                    <h3>Hello, User</h3>
-                </div>
-                </div>
-                <div class="fresh">
-                    <img src="../assets/images/refresh-ccw.png" alt="">
-                </div>
-            </div>
-                </div>
-
-                <div class="first">
-
-                    <div class="temp">
-
-                    <div >
-                        <div class="flex items-center">
-                        <img src="../assets/images/thermometer.png" alt="">
-                        <p>Temperature</p>
-                        </div>
-                        <h4>100*</h4>
-                        <h6>Celsius</h6>
-                    </div>
-                    
-
-                    </div>
-
-                    <div class="temp">
-                     <div >
-                        <div class="flex items-center">
-                        <img src="../assets/images/thermometer.png" alt="">
-                        <p>Humidity</p>
-                        </div>
-                        <h4>48%<span>relative</span></h4>
-                        <h6>Dew point: 21*</h6>
-                    </div>
-                    
-                    
-                    </div>
-                    <div class="temp">
-                         <div >
-                        <div class="flex items-center">
-                        <img src="../assets/images/thermometer.png" alt="">
-                        <p>Light Intensity</p>
-                        </div>
-                        <h4>350</h4>
-                        <h6>Lux</h6>
-                    </div>
-                    
-                    </div>
-                
-                </div>
-
-                <div class="last">
-                    <div class="rain">
-                         <div >
-                        <div class="flex items-center">
-                        <img src="../assets/images/cloud-rain.png" alt="">
-                        <p>RAINFALL</p>
-                        </div>
-                        <h4>00mm/<span>currently</span></h4>
-                        <h6>Location: Unknown</h6>
-                    </div>
-
-                    </div>
-
-
-                        <div class="temp">
-                         <div >
-                        <div class="flex items-center">
-                        <img src="../assets/images/thermometer.png" alt="">
-                        <p>Pressure</p>
-                        </div>
-                        <h4>350</h4>
-                        <h6>hPa</h6>
-                    </div>
-                    
-                    </div>
-                </div>
-     <nuxt-child />
-    
-   </div>
-
+     
+            <nuxt-child />
     
         
     </div>
