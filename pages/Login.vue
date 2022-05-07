@@ -19,13 +19,17 @@
         <form action="">
                 <div>
                     <label for="username">Username</label> <br>
-                <input type="text">
+                <input type="text" required>
                 </div>
                 <div>
                     <label for="password">Password</label> <br>
-                <input type="text">
+                <input type="password" required>
                 </div>
-                <a href="./Sidebar"><button>Sign In</button></a>
+
+
+                <nuxt-link to="/sidebar"><button>Sign In</button></nuxt-link>
+
+
                 <p>Not registered yet? <a href="/signup">Signup</a></p>
         </form>
         
