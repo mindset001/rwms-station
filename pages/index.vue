@@ -7,9 +7,9 @@
       </div>
       <div class="btn">
         <button>
-          <img src="../assets/images/Group 24 (1).png" alt="">
+          <a href="/login"><img src="../assets/images/Group 24 (1).png" alt=""></a>
         </button>
-        <button class="btn2">Sign up</button>
+        <a href="/signup"><button class="btn2">Sign up</button></a>
       </div>
     </nav>
         <div class="flex items-center justify-center mt-16">

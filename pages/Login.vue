@@ -25,7 +25,7 @@
                     <label for="password">Password</label> <br>
                 <input type="text">
                 </div>
-                <button>Sign In</button>
+                <a href="./Sidebar"><button>Sign In</button></a>
                 <p>Not registered yet? <a href="/signup">Signup</a></p>
         </form>
         
