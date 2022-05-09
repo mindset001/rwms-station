@@ -3,7 +3,7 @@
     <div class="gen">
     <nav class="flex justify-between">
       <div>
-        <img src="../assets/images/Group 21 (3).png" alt="">
+        <a href="/"><img src="../assets/images/Group 21 (3).png" alt=""></a>
       </div>
       <div class="btn">
         <button>
