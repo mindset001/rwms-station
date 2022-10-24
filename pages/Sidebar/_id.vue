@@ -93,6 +93,7 @@
 
 <script>
 import axios from 'axios'
+
 // import {database} from 'firebase'
 export default {
     data() {
@@ -120,6 +121,10 @@ export default {
         // .then(res => {
         //      console.log(res)
         // })
+        setInterval(() => {
+            console.log('ran');
+            window.location.reload()
+        }, 30000)
         this.getDb()
         
     

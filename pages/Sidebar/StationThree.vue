@@ -162,13 +162,15 @@ export default {
     }
     .first{
         display: flex;
-        width: 83vw;
+        width: 100%;
         padding: 40px 120px;
         justify-content: space-between;
     }
     .temp{
-        width: 390px;
+       
         height: 244px;
+        padding: 0 10px;
+        margin-left: 20px;
         background: #fff;
         border: 3px solid #FFFFFF;
         box-sizing: border-box;
@@ -254,5 +256,9 @@ export default {
         line-height: 82px;
         color: #fff;
     }
+
+  
+    
+    
 
 </style>
