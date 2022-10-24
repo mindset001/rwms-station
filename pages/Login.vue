@@ -38,6 +38,32 @@
         </div>
     </div>
 </template>
+<script>
+export default {
+  mounted() {
+    this.$fire.auth.signInWithEmailAndPassword(
+      'foofo@fo.com',
+      'test'
+    )
+    .then(res => {
+      console.log(res);
+    })
+  },
+  //   methods: {
+  //   async createUser() {
+  //     try {
+  //       await this.$fire.auth.createUserWithEmailAndPassword(
+  //         'foo@foo.foo',
+  //         'test'
+  //       )
+  //     } catch (e) {
+  //       handleError(e)
+  //     }
+  //   }
+  // }
+}
+</script>
+
 
 <style scoped>
 @import url('http://fonts.cdnfonts.com/css/sofia-pro');

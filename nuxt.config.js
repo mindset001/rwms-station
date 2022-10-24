@@ -1,4 +1,5 @@
 export default {
+  mode: 'spa',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'rwms-station',
@@ -28,10 +29,40 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyDSuVnYCNrb23t7gtx9yclxZDxAGbwwm44',
+          authDomain: 'weather-station-76aed.firebaseapp.com',
+          projectId: 'weather-station-76aed',
+          storageBucket: 'weather-station-76aed.appspot.com',
+          // databaseURL: "https://weather-station-76aed-default-rtdb.firebaseio.com",
+          messagingSenderId: '<messagingSenderId>',
+          appId: '1:11912231167:web:6070787b0b8785fc1db4ca',
+          measurementId: '11912231167'
+        },
+
+        // config: {
+        //   apiKey: "AIzaSyCRUYj4qqjaF8wZ_lyjFV3YIC-TwjjeNsA",
+        //   authDomain: "flexzone-f1411.firebaseapp.com",
+        //   projectId: "flexzone-f1411",
+        //   storageBucket: "flexzone-f1411.appspot.com",
+        //   messagingSenderId: "182730165683",
+        //   appId: "1:182730165683:web:75194740db2f79a7b38fc6"
+        // },
+        services: {
+          auth: true, // Just as example. Can be any other service.
+          database: true,
+        }
+      }
+    ],
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
@@ -53,5 +84,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+
+  // database: {
+  //   emulatorPort: 3000,
+  //   emulatorHost: 'localhost',
+  // }
 }
