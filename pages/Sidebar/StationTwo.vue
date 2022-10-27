@@ -57,7 +57,7 @@
                         <img src="../Sidebar/images/wind.png" alt="" style="margin-right: 20px;">
                         <p>Humidity</p>
                         </div>
-                        <h4>{{details.Humidity}}<span>relative</span></h4>
+                        <h4>{{details.Humidity}}%<span>relative</span></h4>
                         <h6>Dew point: 21*</h6>
                     </div>
                     
@@ -155,17 +155,9 @@ export default {
 </script>
 
 <style scoped>
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
         .top{
         padding: 40px 120px;
-    }
-    h3{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 26px;
-        line-height: 31px;
-        color: #000000;
     }
     .locate span{
         border-bottom: solid 1px #8ab9df;
@@ -180,6 +172,14 @@ export default {
         border: solid 1px #8AB9DF;
         margin-left: 10px;
         height: 40px;
+    }
+    h3{
+        font-family: 'poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 31px;
+        color: #000000;
     }
 
     .fresh{
@@ -228,18 +228,18 @@ export default {
         color: #223C53;
     }
     .temp h6{
-        font-family: 'Inter';
+        font-family: 'poppins';
         font-style: normal;
-        font-weight: 600;
-        font-size: 26px;
+        font-weight: 200;
+        font-size: 24px;
         line-height: 27px;
         color: rgba(34, 60, 83, 0.76);
     }
     .temp h4{
-        font-family: 'Inter';
+        font-family: 'poppins';
         font-style: normal;
-        font-weight: 600;
-        font-size: 72px;
+        font-weight: 200;
+        font-size: 62px;
         line-height: 82px;
         color: #30516D;
     }

@@ -58,7 +58,7 @@
                         <img src="../Sidebar/images/wind.png" alt="" style="margin-right: 20px;">
                         <p>Humidity</p>
                         </div>
-                        <h4>{{details.Humidity}}<span>relative</span></h4>
+                        <h4>{{details.Humidity}}%<span>relative</span></h4>
                         <h6>Dew point: 21*</h6>
                     </div>
                     
@@ -129,7 +129,7 @@ export default {
         const snapshot = await messageRef.once('value')
         // console.log(snapshot.val())
         this.details = snapshot.val()
-        console.log(this.details.Humidity);
+        console.log(('Rain-depth'), this.details.Rain_depth);
       } catch (e) {
         console.log(e);
       }
@@ -158,7 +158,7 @@ export default {
 </script>
 
 <style scoped>
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
         .top{
         padding: 40px 120px;
     }
@@ -177,7 +177,7 @@ export default {
         height: 40px;
     }
     h3{
-        font-family: 'Inter';
+        font-family: 'poppins';
         font-style: normal;
         font-weight: 600;
         font-size: 26px;
@@ -231,18 +231,18 @@ export default {
         color: #223C53;
     }
     .temp h6{
-        font-family: 'Inter';
+        font-family: 'poppins';
         font-style: normal;
-        font-weight: 600;
-        font-size: 26px;
+        font-weight: 200;
+        font-size: 24px;
         line-height: 27px;
         color: rgba(34, 60, 83, 0.76);
     }
     .temp h4{
-        font-family: 'Inter';
+        font-family: 'poppins';
         font-style: normal;
-        font-weight: 600;
-        font-size: 72px;
+        font-weight: 200;
+        font-size: 62px;
         line-height: 82px;
         color: #30516D;
     }
