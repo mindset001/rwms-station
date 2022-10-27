@@ -9,6 +9,25 @@
                     <div class="flex items-center">
                     <img src="../Sidebar/images/user.png" alt="" >
                     <h3>Hello, User</h3>
+                    
+                </div>
+                <div class="location">
+                    <div class="locate">
+                        <p>Location: <span>{{location}}</span></p>
+                    </div>
+                    <div class="flex items-center">
+                        <p>Enter Location:</p>
+                        <input type="text" v-model="location">
+                    </div>
+                </div>
+                <div class="location" style="margin-top: 10px;">
+                    <div class="locate">
+                        <p>GPS: <span>{{gps}}</span></p>
+                    </div>
+                    <div class="flex items-center">
+                        <p>Enter GPS:</p>
+                        <input type="text" v-model="gps">
+                    </div>
                 </div>
                 </div>
                 <!-- <div class="fresh">
@@ -26,7 +45,7 @@
                         <img src="../Sidebar/images/thermometer.png" alt="" style="margin-right: 20px;">
                         <p>Temperature</p>
                         </div>
-                        <h4>{{details.Temperature}}*</h4>
+                        <h4>{{details.Temperature}}<sup>o</sup></h4>
                         <h6>Celsius</h6>
                     </div>
                     
@@ -67,7 +86,7 @@
                         <p>Rainfall</p>
                         </div>
                         <h4>{{details.Rain_speed}}mm/<span>currently</span></h4>
-                        <h6>Location: Unknown</h6>
+                        <!-- <h6>Location: Unknown</h6> -->
                     </div>
 
                     </div>
@@ -99,6 +118,8 @@ export default {
     data() {
         return {
             details: '',
+            location: '',
+            gps: '',
         }
     },
     methods: {
@@ -124,7 +145,8 @@ export default {
         setInterval(() => {
             console.log('ran');
             window.location.reload()
-        }, 30000)
+        }, 10000)
+        
         this.getDb()
         
     
@@ -139,6 +161,20 @@ export default {
 
         .top{
         padding: 40px 120px;
+    }
+    .locate span{
+        border-bottom: solid 1px #8ab9df;
+    }
+    .location{
+        display: flex;
+        width: 90vw;
+       
+        justify-content: space-between;
+    }
+    input{
+        border: solid 1px #8AB9DF;
+        margin-left: 10px;
+        height: 40px;
     }
     h3{
         font-family: 'Inter';

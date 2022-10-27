@@ -10,6 +10,24 @@
                     <img src="../Sidebar/images/user.png" alt="" >
                     <h3>Hello, User-2</h3>
                 </div>
+                <div class="location">
+                    <div class="locate">
+                        <p>Location: <span>{{location}}</span></p>
+                    </div>
+                    <div class="flex items-center">
+                        <p>Enter Location:</p>
+                        <input type="text" v-model="location">
+                    </div>
+                </div>
+                <div class="location" style="margin-top: 10px;">
+                    <div class="locate">
+                        <p>GPS: <span>{{gps}}</span></p>
+                    </div>
+                    <div class="flex items-center">
+                        <p>Enter GPS:</p>
+                        <input type="text" v-model="gps">
+                    </div>
+                </div>
                 </div>
                 <!-- <div class="fresh">
                     <img src="../Sidebar/images/refresh-ccw.png" alt="" style="margin-right: 20px;">
@@ -26,7 +44,7 @@
                         <img src="../Sidebar/images/thermometer.png" alt="" style="margin-right: 20px;">
                         <p>Temperature</p>
                         </div>
-                        <h4>{{details.Temperature}}*</h4>
+                        <h4>{{details.Temperature}}<sup>o</sup></h4>
                         <h6>Celsius</h6>
                     </div>
                     
@@ -98,6 +116,8 @@ export default {
     data() {
         return {
             details: '',
+            location: '',
+            gps: '',
         }
     },
     methods: {
@@ -122,7 +142,11 @@ export default {
         // })
         this.getDb()
         
-    
+        setInterval(() => {
+            console.log('ran');
+            window.location.reload()
+        }, 10000)
+        this.getDb()
         
     },
     
@@ -142,6 +166,20 @@ export default {
         font-size: 26px;
         line-height: 31px;
         color: #000000;
+    }
+    .locate span{
+        border-bottom: solid 1px #8ab9df;
+    }
+    .location{
+        display: flex;
+        width: 90vw;
+       
+        justify-content: space-between;
+    }
+    input{
+        border: solid 1px #8AB9DF;
+        margin-left: 10px;
+        height: 40px;
     }
 
     .fresh{

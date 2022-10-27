@@ -6,10 +6,10 @@
         <a href="/"><img src="../assets/images/Group 21 (3).png" alt=""></a>
       </div>
       <div class="btn">
-        <button>
+        <!-- <button>
           <a href="/login"><img src="../assets/images/Group 24 (1).png" alt=""></a>
-        </button>
-        <a href="/signup"><button class="btn2">Sign up</button></a>
+        </button> -->
+        <a href="./Sidebar"><button class="btn2">check status</button></a>
       </div>
     </nav>
         <div class="flex items-center justify-center mt-16">
@@ -51,7 +51,7 @@ export default {
   .btn2{
     background: #8AB9DF;
     border-radius: 15px;
-    width: 137.87px;
+    width: 337.87px;
     height: 60px;
     font-family: 'Sofia Pro';
     font-style: normal;
