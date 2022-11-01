@@ -144,10 +144,12 @@ export default {
         // })
         setInterval(() => {
             console.log('ran');
-            window.location.reload()
+            // window.location.reload()
+            this.getDb()
+            console.log('ran');
         }, 10000)
         
-        this.getDb()
+        // this.getDb()
         
     
         
