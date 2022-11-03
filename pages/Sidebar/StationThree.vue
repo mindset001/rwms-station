@@ -8,7 +8,7 @@
                                         <div>
                     <div class="flex items-center">
                     <img src="../Sidebar/images/user.png" alt="" >
-                    <h3>Hello, User-3</h3>
+                    <h3>Hello, Station-3</h3>
                 </div>
                 <div class="location">
                     <div class="locate">
@@ -174,6 +174,7 @@ export default {
         border: solid 1px #8AB9DF;
         margin-left: 10px;
         height: 40px;
+        border-radius: 15px;
     }
     h3{
         font-family: 'poppins';
@@ -222,7 +223,7 @@ export default {
     }
 
      .temp p{
-        font-family: 'Inter';
+        font-family: 'poppins';
         font-style: normal;
         font-weight: 600;
         font-size: 26px;
@@ -273,7 +274,7 @@ export default {
     }
 
     .rain p{
-        font-family: 'Inter';
+        font-family: 'poppins';
         font-style: normal;
         font-weight: 600;
         font-size: 26px;
@@ -281,7 +282,7 @@ export default {
         color: #fff;
     }
     .rain h6{
-        font-family: 'Inter';
+        font-family: 'poppins';
         font-style: normal;
         font-weight: 600;
         font-size: 26px;
@@ -289,7 +290,7 @@ export default {
         color: #fff;
     }
     .rain h4{
-        font-family: 'Inter';
+        font-family: 'poppins';
         font-style: normal;
         font-weight: 600;
         font-size: 72px;
